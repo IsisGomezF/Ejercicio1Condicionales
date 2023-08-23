@@ -7,11 +7,11 @@
     alert("No te creo");
  }
  else{
-    alert("Preguntale a alguien");
+    alert("Pregúntale a alguien");
  }
 
  /* 2 Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm*/
- let pregu= parseInt(prompt("Escribe un numero:"));
+ let pregu= parseInt(prompt("Escribe un numero para saber si es divisible por 2:"));
  if (pregu % 2 == 0){
     alert(pregu + " número es divisible entre 2");
  }
@@ -20,7 +20,7 @@
  }
 
  /* 3 Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert.*/
- let numero= parseInt(prompt("Escribe un numero:"));
+ let numero= parseInt(prompt("Escribe un numero para saber si es par:"));
  if (numero % 2 == 0){
     alert(numero + " es par");
  }
@@ -64,7 +64,7 @@
     alert ("El numero mayor es " + number3)
  }
  else{
-    alert("Intenta nuevamente")
+    alert("Intenta nuevamente, ingresa numeros diferentes")
  }
 
  /*7. Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.*/
@@ -83,13 +83,13 @@ switch (day){
         document.write("¿Vamos a correr?")
         break;
     default:
-        document.write("Animo!")
+        document.write("Ánimo!")
 }
 
 /*8. Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.*/
-let note = prompt("Ingresa tu calificacion")
+let note = prompt("Ingresa tu calificacion:")
 if(note<1 || note>10){
-    alert("Error; por favor ingresar nota valida")
+    alert("Error; por favor ingresa una nota valida")
 }
 else if(note < 6){
     document.write("Reprobado")
@@ -117,7 +117,7 @@ if (topping == "no"){
     alert("Su helado cuesta 50MXN")
 }
 else if (topping == "si"){
-    let sabor = prompt("¿De que sabor desea el topping?")
+    let sabor = prompt("¿De qué sabor desea el topping?")
     switch (sabor){
         case "oreo":
             alert("Su helado cuesta " + ( precioBase + 10) +" MXN");
@@ -177,7 +177,7 @@ switch(nivel){
         alert("El programa " + nivel + " cuesta $ " + Master + " MXN mensuales y dura " + tmaster + " meses.");
         break;
     default:
-        alert("Opcion ivalida, por favor ingrese uno de los programas; course, carrera, master.")
+        alert("Opción ivalida, por favor ingrese uno de los programas; course, carrera, master.")
 }
 
 let bene = prompt("¿Es beneficiario de alguna beca Si/No?")
