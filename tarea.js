@@ -112,8 +112,7 @@ El topping de brownie cuesta 20 MXN.
 En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el precio del helado sin ningún topping.*/
 
 let precioBase = 50;
-let topping = prompt("¿Desea adicionar un topping a su helado Si
-/No ?").toLowerCase();
+let topping = prompt("¿Desea adicionar un topping a su helado Si/No ?").toLowerCase();
 if (topping == "no"){
     alert("Su helado cuesta 50MXN.")
 }
