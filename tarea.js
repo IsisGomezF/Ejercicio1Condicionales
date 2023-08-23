@@ -1,53 +1,53 @@
 /* 1 Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no, responder: “No te creo”.*/
  let ask = prompt("¿Eres bellisimo/a?");
  if(ask === "si"){
-    alert("Ciertamente");
+    alert("Ciertamente.");
  }
  else if ( ask === "no"){
-    alert("No te creo");
+    alert("No te creo.");
  }
  else{
-    alert("Pregúntale a alguien");
+    alert("Pregúntale a alguien.");
  }
 
  /* 2 Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm*/
  let pregu= parseInt(prompt("Escribe un numero para saber si es divisible por 2:"));
  if (pregu % 2 == 0){
-    alert(pregu + " número es divisible entre 2");
+    alert(pregu + " número es divisible entre 2.");
  }
  else{
-    alert(pregu + " número no es divisible entre 2");
+    alert(pregu + " número no es divisible entre 2.");
  }
 
  /* 3 Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert.*/
  let numero= parseInt(prompt("Escribe un numero para saber si es par:"));
  if (numero % 2 == 0){
-    alert(numero + " es par");
+    alert(numero + " es par.");
  }
  else{
-    alert(numero + " no es par");
+    alert(numero + " no es par.");
  }
 
  /* 4 Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir "Ganaste un premio", en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.*/
  let cliente = parseInt(prompt("Escribe un numero de cliente:"));
  if (cliente === 1000){
-    document.write ("Ganaste un premio")
+    document.write ("Ganaste un premio.")
  }
  else {
-    document.write ( cliente, " Lo sentimos, sigue participando")
+    document.write ( cliente, " Lo sentimos, sigue participando.")
  }
 
  /* 5 Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.*/
  let numero1 = prompt("Escribe un número:");
  let numero2 = prompt("Escribe otro número:");
  if(numero1 < numero2){
-    alert( "El primer número (" + numero1 + ") es menor que el segundo número (" + numero2 + ")")
+    alert( "El primer número (" + numero1 + ") es menor que el segundo número (" + numero2 + ").")
  }
  else if(numero1>numero2){
-    alert ("El segundo número (" + numero2 + ") es menor que el primer número (" + numero1 + ")")
+    alert ("El segundo número (" + numero2 + ") es menor que el primer número (" + numero1 + ").")
  }
  else{
-    alert("Introduce números diferentes")
+    alert("Introduce números diferentes.")
  }
 
  /*6. Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.*/
@@ -55,53 +55,53 @@
  let number2 = prompt("Escribe el segundo número:")
  let number3 = prompt("Escribe el tercer número:")
  if(number1 > number2 && number1 > number3){
-    alert ("El numero mayor es " + number1)
+    alert ("El numero mayor es " + number1 +".")
  }
  else if(number2 > number1 && number2 > number3){
-    alert ("El numero mayor es " + number2 )
+    alert ("El numero mayor es " + number2 +"." )
  }
  else if(number3 > number1 && number3 > number2){
-    alert ("El numero mayor es " + number3)
+    alert ("El numero mayor es " + number3 + ".")
  }
  else{
-    alert("Intenta nuevamente, ingresa numeros diferentes")
+    alert("Intenta nuevamente, ingresa numeros diferentes.")
  }
 
  /*7. Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.*/
-let day = prompt("Escribe un dia de la semana").toLowerCase();
+let day = prompt("Escribe un dia de la semana:").toLowerCase();
 switch (day){
     case "lunes":
-        document.write("Vamos a empezar la semana");
+        console.log("Vamos a empezar la semana.");
         break;
     case "viernes":
-        document.write("Porfin se acabó la semana");
+        console.log("Porfin se acabó la semana!");
         break;
     case "sabado":
-        document.write("Puedes dormir hasta tarde")
+        console.log("Puedes dormir hasta tarde.")
         break;
     case "domingo":
-        document.write("¿Vamos a correr?")
+        console.log("¿Vamos a correr?")
         break;
     default:
-        document.write("Ánimo!")
+        console.log("Ánimo!")
 }
 
 /*8. Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.*/
 let note = prompt("Ingresa tu calificacion:")
 if(note<1 || note>10){
-    alert("Error; por favor ingresa una nota valida")
+    alert("Error; por favor ingresa una nota entre 1 y 10.")
 }
 else if(note < 6){
-    document.write("Reprobado")
+    document.write("Reprobado.")
 }
 else if(note >= 6 && note <= 8){
-    document.write("Regular")
+    document.write("Regular.")
 }
 else if(note >= 9 && note < 10 ){
-    document.write("Bien")
+    document.write("Bien.")
 }
 else if(note == 10){
-    document.write("Excelente")
+    document.write("Excelente.")
 }
 
 /*9. Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuánto le costará en función del topping que elija.
@@ -114,22 +114,22 @@ En caso de no disponer del topping solicitado por el usuario, el programa le ind
 let precioBase = 50;
 let topping = prompt("¿Desea adicionar un topping a su helado?").toLowerCase();
 if (topping == "no"){
-    alert("Su helado cuesta 50MXN")
+    alert("Su helado cuesta 50MXN.")
 }
 else if (topping == "si"){
     let sabor = prompt("¿De qué sabor desea el topping?")
     switch (sabor){
         case "oreo":
-            alert("Su helado cuesta " + ( precioBase + 10) +" MXN");
+            alert("Su helado cuesta " + ( precioBase + 10) +" MXN.");
             break;
         case "kitKat":
-            alert("Su helado cuesta " + ( precioBase + 15) +" MXN");
+            alert("Su helado cuesta " + ( precioBase + 15) +" MXN.");
             break;
         case "brownie":
-            alert("Su helado cuesta " + ( precioBase + 20) +" MXN");
+            alert("Su helado cuesta " + ( precioBase + 20) +" MXN.");
             break;
         default:
-            alert("No tenemos este topping, lo sentimos")
+            alert("No tenemos este topping, lo sentimos.")
 }}
 else {
     alert("Respuesta inválida, por favor responda 'si' o 'no'");
@@ -193,7 +193,7 @@ if(bene == "no"){
             alert("El costo total del programa " + nivel + " es de $ " + Master * tmaster +".");
             break;
         default:
-            alert("Opcion ivalida, por favor ingrese Si o No")
+            alert("Opcion ivalida, por favor ingrese Si o No.")
 }}
 else if (bene == "si"){
     let beca = prompt("Escriba el nombre de la beca: Facebook, Google, Jesua: ").toLowerCase();
@@ -258,13 +258,13 @@ let kilometraje=prompt("Ingrese Kilometros recorridos")
 if(kilometraje > 0 || kilometraje<=100){
     switch (vehiculo){
         case("coche"):
-            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioCoche) + 5) +"")
+            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioCoche) + 5) +".")
             break;
         case("moto"):
-            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioMoto) + 5) +"")
+            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioMoto) + 5) +".")
             break;
         case("autobus"):
-            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioAutobus) + 5) +"")
+            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioAutobus) + 5) +".")
             break;
         default:
             alert("Vehiculo no valido.")
@@ -273,20 +273,20 @@ if(kilometraje > 0 || kilometraje<=100){
 else if ( kilometraje>100){
     switch (vehiculo){
         case("coche"):
-            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioCoche) + 10) +"")
+            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioCoche) + 10) +".")
             break;
         case("moto"):
-            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioMoto) + 10) +"")
+            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioMoto) + 10) +".")
             break;
         case("autobus"):
-            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioAutobus) + 10) +"")
+            alert("El combustible para su " + vehiculo +" cuesta " + ((kilometraje*precioAutobus) + 10) +".")
             break;
         default:
             alert("Vehiculo no valido.")
     }
 }
 else{
-    alert("Vehiculo invalido. Solo válido para coches, moto, autobuses")
+    alert("Vehiculo invalido. Solo válido para coches, moto, autobuses.")
 }
 
 
